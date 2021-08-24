@@ -1,0 +1,495 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+
+header {
+     position: relative;
+     min-height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bg1.jpg);
+     background-size: cover;
+     overflow-x: hidden ;
+}
+
+nav nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    color: rgb(211, 58, 58);
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+/* Navigation bar animations*/
+
+nav ul li{
+    text-decoration: none;
+    margin: 20px 08px;
+    border: none;
+    background-color: rgb(211, 58, 58);
+    padding: 5px 10px;
+    transition: 0.5s;
+    position: relative;
+
+}
+
+nav ul li:hover {
+    background-color: transparent;
+}
+
+nav ul li:before,
+nav ul li:after{
+    border: 0 solid transparent;
+    transition: all 0.7s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+}
+
+nav ul li:before{
+border-top:2px solid rgb(211, 58, 58);
+right: 0;
+top: 0px;
+}
+
+nav ul li:after{
+    border-bottom:2px solid rgb(211, 58, 58);
+    left: 0;
+    bottom: 0px;
+    }
+
+nav ul li:hover::before,
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/* ----------------------------------- */
+
+
+nav ul li a {
+    color:#fff;
+    text-decoration: none;
+    font-family:serif;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: rgb(211, 58, 58);
+    font-weight: 600;
+}
+
+header nav img{
+    float:left;
+    margin-left: 10px;
+    width: 25%;
+    height: 15%;
+    padding-top: 0px;
+}
+
+
+.headcontent {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left:5%;
+    transform: translate(-50, -50);
+    text-align: center;
+}
+
+.pagetitle{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 30px;
+    padding: 10px;
+}
+
+.pagetitle span{
+    color: rgb(211, 58, 58);
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.headcontent p{
+    margin: 20px;
+    font-size: 18px;
+    
+}
+
+.btn-header {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid rgb(red, green, blue);
+    background-color: rgb(211, 58, 58);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 40px 20px;
+    padding: 10px; 
+    width: 10%;
+    font-weight: 500;
+}
+
+.btn-header:hover{
+    background-color: transparent;
+    color:rgb(211, 58, 58);
+    font-weight: 900 ;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(211, 58, 58);
+    border-top: 2px solid rgb(211, 58, 58);
+    transition: 0.4s;
+}
+
+nav .far{
+    display: none;
+}
+
+section {
+    padding: 75px;
+}
+
+.about-row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-col{
+    position: relative;
+    width:48%;
+}
+
+.about-title{
+    color:#000;
+    font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-title span{
+    color: rgb(211, 58, 58);
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.about-row .about-col .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.about-row .about-col .imgbx img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    background-color: rgb(233, 224, 224);
+}
+
+.title-menu{
+    text-align: center;
+    margin: 10px;
+}
+
+.title-text{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.title-text span{
+    color: rgb(211, 58, 58);
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.menu .content{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    
+}
+
+.box{
+    margin: 30px;
+    position: relative;
+    width:25%;
+    border: rgb(211, 58, 58) thin;
+    border-radius: 3px;
+    border-bottom: solid;
+}
+
+.box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.box .imgbx img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .box .imgbx img:hover{
+    opacity: 0.1;
+    
+}
+
+
+.viewmore-btn{
+    text-align: center;
+}
+
+.box h3{
+    color: rgb(211, 58, 58);
+    font-size: 25px;
+    text-align: center;
+}
+
+.box h3:hover{
+    color: rgb(2, 2, 2);
+}
+
+.imgtext{
+    text-align: center;
+}
+
+.title-menu1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.Expertsection{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bg1.jpg);
+}
+
+.Expertsection .content{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.Expertsection .content .box{
+    margin: 30px;
+    position: relative;
+    width:25%;
+    border: rgb(211, 58, 58) thin;
+    border-radius: 3px;
+    border-bottom: solid;
+}
+
+.Expertsection .content .box img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-contact{
+    text-align: center;
+}
+
+.contact{
+    background-color: rgb(129, 218, 210);
+}
+
+.contactform{
+    padding:75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.contactform h3{
+    color:#111;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contactform .inputBox input[type="submit"]
+{
+    font-size: 20px;
+    background: rgb(211, 58, 58);
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+    border:rgb(211, 58, 58) soild;
+}
+
+
+
+
+
+
+/*--------------media query for device responsiveness --------------*/
+
+@media(max-width:700px){
+
+    .pagetitle{
+        font-size: 30px;
+        font-weight: 500;
+        margin: 20px;
+        padding: 10px;
+
+    }
+
+    .headcontent p{
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .btn-header {
+        width: 30%;
+      }
+
+      .headcontent {
+        width: 95%;
+        top: 18%;
+      }
+
+        header nav img{
+            float:left;
+            margin-left: 5px;
+            width: 43%;
+            height: 23%;
+        }
+
+        nav ul li{
+            display: block;
+            margin-top: 50px;
+        }
+
+         nav ul{
+            position: absolute;
+            background: rgb(20, 12, 12);
+            height: 100vh;
+            width: 200px;
+            text-align: left;
+            top:0;
+            right:-220px;
+            z-index: 2;
+            display:inline-block;
+            padding: 8px;
+         }
+
+        nav ul li a:hover{
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+
+        nav .far{
+            display: block;
+            color: #fff;
+            font-size: 25px;
+            margin: 10px;
+            cursor: pointer;
+            padding: 05px;
+            float: right;
+        }
+
+        nav .far:hover{
+            color:rgb(211, 58, 58)
+        }
+
+        .about-row{
+            flex-direction: column;
+         }
+
+        .about-col{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        .about-title{
+            color:#000;
+            font-size: 40px;
+        }
+
+        .menu .content{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .box{
+            margin: 20px;
+            position: relative;
+            width:80%;
+            border: rgb(211, 58, 58) thin;
+            border-radius: 3px;
+            border-bottom: solid;
+            margin-left: 10%;
+        }
+
+        .Expertsection .content{
+            flex-direction: column;
+        }
+
+        .Expertsection .content .box{
+            margin: 20px;
+            position: relative;
+            width:80%;
+            border: rgb(211, 58, 58) thin;
+            border-radius: 3px;
+            border-bottom: solid;
+            margin-left: 10%;
+
+        }
+
+    }
+
+
+
